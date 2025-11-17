@@ -335,14 +335,10 @@ footer {
     text-decoration: none
 }
 
-
-
 .footer-email {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-
 }
 
 .footer-email h1 {
@@ -386,4 +382,226 @@ footer {
     background-color: #111827;
     display: flex;
     justify-content: center;
+}
+
+.perfil-slideshow {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 16px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-slideshow h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.perfil-subtitle {
+    font-size: 20px;
+    color: #6b7280;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.slide-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+}
+
+.profile-slide {
+    background: #ffffff;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 900px;
+    height: 800px;
+}
+
+
+.profile-slide> :not(.slide-header) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    background: #e0edff;
+    color: #2563eb;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 18px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.slide-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    background-color: #2563EB;
+    height: 170px;
+    padding: 16px 18px;
+    color: #fff;
+}
+
+.slide-header img {
+    width: 95px;
+    height: 95px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.slide-header-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-header-texto h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.slide-header-texto .profile-role {
+    color: #DBEAFE;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.slide-header-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.slide-header-info i {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.slide-body {
+    padding-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.slide-body p {
+    color: #4b5563;
+    font-size: 16px;
+}
+
+.slide-body-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.slide-body-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    padding: 8px 0 14px 0;
+    color: #111827;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.slide-body-contact p {
+    color: #1d4ed8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.slide-body-contact span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+}
+
+.slide-body-sobre {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #111827;
+    font-weight: 500;
+}
+
+.slide-body-sobre i {
+    color: #2563EB;
+}
+
+
+.slide-academico li {
+    list-style: none;
+    border-left: 4px solid #2563EB;
+    padding-left: 10px;
+}
+
+.slide-profissional {
+    list-style: none;
+    border-left: 4px solid #2563EB;
+    padding-left: 10px;
+}
+
+.chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip-list .chip {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+}
+
+#profile-skills .chip {
+    background: #eef4ff;
+    color: #2563eb;
+    border: 1px solid #c7d2fe;
+}
+
+#profile-traits .chip {
+    background: #f5e8ff;
+    color: #7c3aed;
+    border: 1px solid #e9d5ff;
+}
+
+#profile-workstyle .chip {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+#profile-interests .chip {
+    background: #feecec;
+    color: #dc2626;
+    border: 1px solid #fecaca;
 }
