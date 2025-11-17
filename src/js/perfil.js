@@ -5,7 +5,7 @@ const professionals = [
     name: "Marcus Johnson",
     role: "Consultor de Trabalho Remoto",
     location: "Austin, TX",
-    image: "src/Perfil-Foto1.jpg",
+    image: "../src/img/Perfil-Foto1.jpg",
     company: "WorkAnywhere Co.",
     email: "marcus.j@workanywhere.com",
     phone: "+1 (555) 234-5678",
@@ -24,7 +24,7 @@ const professionals = [
     name: "Sarah Chen",
     role: "Especialista em Ética de IA",
     location: "São Francisco, CA",
-    image: "src/Perfil-Foto2.jpg",
+    image: "../img/Perfil-Foto2.jpg",
     company: "FutureTech Labs",
     email: "sarah.chen@futuretechlabs.com",
     phone: "+1 (555) 301-8890",
@@ -43,7 +43,7 @@ const professionals = [
     name: "Priya Patel",
     role: "Diretora de Sustentabilidade",
     location: "Seattle, WA",
-    image: "src/Perfil-Foto3.jpg",
+    image: "../img/Perfil-Foto3.jpg",
     company: "GreenFuture Corp",
     email: "priya.patel@greenfuturecorp.com",
     phone: "+1 (555) 734-2201",
@@ -68,7 +68,7 @@ const professionals = [
     name: "David Kim",
     role: "Líder de Design UX",
     location: "Nova York, NY",
-    image: "src/Perfil-Foto4.jpg",
+    image: "../img/Perfil-Foto4.jpg",
     company: "DesignFirst Studio",
     email: "david.kim@designfirst.studio",
     phone: "+1 (555) 642-1144",
@@ -87,7 +87,7 @@ const professionals = [
     name: "Elena Rodriguez",
     role: "Desenvolvedora Blockchain",
     location: "Miami, FL",
-    image: "src/Perfil-Foto5.jpg",
+    image: "../img/Perfil-Foto5.jpg",
     company: "CryptoInnovate",
     email: "elena.rodriguez@cryptoinnovate.io",
     phone: "+1 (555) 775-0098",
@@ -106,7 +106,7 @@ const professionals = [
     name: "James Mitchell",
     role: "Gerente de Aprendizagem e Desenvolvimento",
     location: "Boston, MA",
-    image: "src/Perfil-Foto6.jpg",
+    image: "../img/Perfil-Foto6.jpg",
     company: "SkillBridge Academy",
     email: "james@skillbridge.academy",
     phone: "+1 (555) 210-4433",
@@ -125,7 +125,7 @@ const professionals = [
     name: "Ana Silva",
     role: "Cientista de Dados",
     location: "São Paulo, SP",
-    image: "src/Perfil-Foto7.jpg",
+    image: "../img/Perfil-Foto7.jpg",
     company: "DataInsights Pro",
     email: "ana.silva@datainsights.pro",
     phone: "+55 11 98765-4321",
@@ -144,7 +144,7 @@ const professionals = [
     name: "Thomas Anderson",
     role: "Especialista em Segurança Cibernética",
     location: "Londres, Reino Unido",
-    image: "src/Perfil-Foto8.jpg",
+    image: "../img/Perfil-Foto8.jpg",
     company: "SecureShield Systems",
     email: "thomas.anderson@secureshield.systems",
     phone: "+44 20 7946 1110",
@@ -163,7 +163,7 @@ const professionals = [
     name: "Sophia Martinez",
     role: "Gerente de Produto Digital",
     location: "Barcelona, Espanha",
-    image: "src/Perfil-Foto9.jpg",
+    image: "../img/Perfil-Foto9.jpg",
     company: "InnovateTech",
     email: "sophia@innovatech.com",
     phone: "+34 91 123 4567",
@@ -182,7 +182,7 @@ const professionals = [
     name: "Raj Sharma",
     role: "Estrategista de Marketing Digital",
     location: "Mumbai, Índia",
-    image: "src/Perfil-Foto10.jpg",
+    image: "../img/Perfil-Foto10.jpg",
     company: "GrowthLab Agency",
     email: "raj@growthlab.agency",
     phone: "+91 22 4001 7788",
@@ -201,7 +201,7 @@ const professionals = [
     name: "Lisa Wang",
     role: "Especialista em RH Tech",
     location: "Singapura",
-    image: "src/Perfil-Foto11.jpg",
+    image: "../img/Perfil-Foto11.jpg",
     company: "TalentFlow Solutions",
     email: "lisa@talentflow.solutions",
     phone: "+65 6123 7788",
@@ -220,7 +220,7 @@ const professionals = [
     name: "Carlos Mendes",
     role: "Gerente de Mídias Sociais",
     location: "Lisboa, Portugal",
-    image: "src/Perfil-Foto12.jpg",
+    image: "../img/Perfil-Foto12.jpg",
     company: "Social Buzz Agency",
     email: "carlos@socialbuzz.agency",
     phone: "+351 21 555 9090",
@@ -282,16 +282,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (contactEl) {
       const items = [];
       if (p.email) {
-        items.push(`<p class="contact-item" href="mailto:${p.email}"><i class=\"fa-solid fa-envelope\"></i><span>${p.email}</span></p>`);
+        items.push(`<a class="contact-item" href="mailto:${p.email}"><i class="fa-solid fa-envelope"></i><span>${p.email}</span></a>`);
       }
       if (p.website) {
         const href = p.website.startsWith('http') ? p.website : `https://${p.website}`;
         const label = p.website.replace(/^https?:\/\//, '');
-        items.push(`<p class="contact-item" href="${href}" target="_blank" rel="noopener"><i class=\"fa-solid fa-globe\"></i><span>${label}</span></p>`);
+        items.push(`<a class="contact-item" href="${href}" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i><span>${label}</span></a>`);
       }
       if (p.phone) {
         const telHref = `tel:${p.phone.replace(/\s+/g, '')}`;
-        items.push(`<p class="contact-item" href="${telHref}"><i class=\"fa-solid fa-phone\"></i><span>${p.phone}</span></p>`);
+        items.push(`<a class="contact-item" href="${telHref}"><i class="fa-solid fa-phone"></i><span>${p.phone}</span></a>`);
       }
       contactEl.innerHTML = items.join('');
     }
