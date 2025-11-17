@@ -235,3 +235,106 @@ const professionals = [
     hobbies: ["Fotografia", "Tendências", "Música"]
   }
 ];
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Pega elementos
+  const photoEl = document.getElementById("profile-photo");
+  const nameEl = document.getElementById("profile-name");
+  const roleEl = document.getElementById("profile-role");
+  const locEl = document.getElementById("profile-location");
+  const locTextEl = document.getElementById("profile-location-text");
+  const companyTextEl = document.getElementById("profile-company-text");
+  const aboutEl = document.getElementById("profile-about");
+  const academicEl = document.getElementById("profile-academic");
+  const expEl = document.getElementById("profile-experience");
+
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+
+  // Lê ?id= da URL
+  const params = new URLSearchParams(window.location.search);
+  const urlId = parseInt(params.get("id"), 10);
+
+  // Define índice inicial: Se veio id válido, Começa nele; Se não, Começa no 0
+  let currentIndex = 0;
+  if (!isNaN(urlId)) {
+    const foundIndex = professionals.findIndex(p => p.id === urlId);
+    if (foundIndex !== -1) {
+      currentIndex = foundIndex;
+    }
+  }
+
+  function renderSlide(index) {
+    const p = professionals[index];
+    if (!p) return;
+
+    photoEl.src = p.image;
+    photoEl.alt = `Foto de ${p.name}`;
+    nameEl.textContent = p.name;
+    roleEl.textContent = p.role;
+    if (locTextEl) locTextEl.textContent = p.location;
+    if (companyTextEl) companyTextEl.textContent = p.company || "";
+    aboutEl.textContent = p.about;
+
+    // Barra de contato
+    const contactEl = document.getElementById('contact-info');
+    if (contactEl) {
+      const items = [];
+      if (p.email) {
+        items.push(`<p class="contact-item" href="mailto:${p.email}"><i class=\"fa-solid fa-envelope\"></i><span>${p.email}</span></p>`);
+      }
+      if (p.website) {
+        const href = p.website.startsWith('http') ? p.website : `https://${p.website}`;
+        const label = p.website.replace(/^https?:\/\//, '');
+        items.push(`<p class="contact-item" href="${href}" target="_blank" rel="noopener"><i class=\"fa-solid fa-globe\"></i><span>${label}</span></p>`);
+      }
+      if (p.phone) {
+        const telHref = `tel:${p.phone.replace(/\s+/g, '')}`;
+        items.push(`<p class="contact-item" href="${telHref}"><i class=\"fa-solid fa-phone\"></i><span>${p.phone}</span></p>`);
+      }
+      contactEl.innerHTML = items.join('');
+    }
+
+    // Skills
+    const skillsEl = document.getElementById('profile-skills');
+    const traitsEl = document.getElementById('profile-traits');
+    const workStyleEl = document.getElementById('profile-workstyle');
+    const interestsEl = document.getElementById('profile-interests');
+    if (skillsEl) { skillsEl.innerHTML = ''; (p.skills || []).forEach(s => { const d = document.createElement('div'); d.className = 'chip'; d.textContent = s; skillsEl.appendChild(d) }); }
+    if (traitsEl) { traitsEl.innerHTML = ''; (p.traits || []).forEach(t => { const d = document.createElement('div'); d.className = 'chip'; d.textContent = t; traitsEl.appendChild(d) }); }
+    if (workStyleEl) { workStyleEl.innerHTML = ''; (p.workStyle || []).forEach(w => { const d = document.createElement('div'); d.className = 'chip'; d.textContent = w; workStyleEl.appendChild(d) }); }
+    if (interestsEl) { interestsEl.innerHTML = ''; (p.interests || []).forEach(i => { const d = document.createElement('div'); d.className = 'chip'; d.textContent = i; interestsEl.appendChild(d) }); }
+
+    academicEl.innerHTML = "";
+    p.academic.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      academicEl.appendChild(li);
+    });
+
+    expEl.innerHTML = "";
+    p.experience.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      expEl.appendChild(li);
+    });
+
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % professionals.length;
+    renderSlide(currentIndex);
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + professionals.length) % professionals.length;
+    renderSlide(currentIndex);
+  }
+
+  if (prevBtn) prevBtn.addEventListener("click", showPrev);
+  if (nextBtn) nextBtn.addEventListener("click", showNext);
+
+  // Render inicial
+  renderSlide(currentIndex);
+});
