@@ -11,13 +11,12 @@ const professionals = [
     phone: "+1 (555) 234-5678",
     website: "https://workanywhere.com",
     about: "Ajudando organizações a fazer a transição para modelos de trabalho remoto e híbrido eficazes. Especialista em colaboração digital e gestão de equipes distribuídas.",
-    skills: ["Estratégia de Trabalho Remoto", "Gestão de Equipes", "Ferramentas Digitais", "Gestão de Mudanças","Comunicação"],
+    skills: ["Estratégia de Trabalho Remoto", "Gestão de Equipes", "Ferramentas Digitais", "Gestão de Mudanças", "Comunicação"],
     traits: ["Estratégico", "Focado em Pessoas", "Organizado", "Visionário"],
-    workStyle: ["Orientado a Resultados", "Híbrido", "Colaborativo", "Proativo"],
+    workStyle: ["Orientado a Resultados", "Flexível", "Comunicativo", "Proativo"],
     interests: ["Nomadismo Digital", "Produtividade", "Equilíbrio Trabalho-Vida", "Viagens"],
-    academic: ["MBA em Gestão de Pessoas - Harvard Business School", "Bacharelado em Psicologia Organizacional" ],
-    experience: ["8 anos como consultor de trabalho remoto","Projetos em empresas globais distribuídas"],
-    hobbies: ["Liderança colaborativa","Empatia com equipes multiculturais","Trilhas e fotografia de paisagens"]
+    academic: ["MBA em Gestão de Pessoas - Harvard Business School - 2016", "Bacharelado em Psicologia Organizacional- UC Berkeley - 2012"],
+    experience: ["Consultor de Trabalho Remoto - WorkAnywhere Co. - 2018-Atual", "Gerente de RH - Tech Innovations Inc. - 2016-2018"],
   },
   {
     id: 2,
@@ -27,16 +26,15 @@ const professionals = [
     image: "../img/Perfil-Foto2.jpg",
     company: "FutureTech Labs",
     email: "sarah.chen@futuretechlabs.com",
-    phone: "+1 (555) 301-8890",
+    phone: "+1 (555) 123-4567",
     website: "https://futuretechlabs.com",
     about: "Apaixonada por garantir que o desenvolvimento de IA esteja alinhado com valores humanos e bem social. Liderando iniciativas em implementação responsável de IA.",
     skills: ["Ética em IA", "Aprendizado de Máquina", "Desenvolvimento de Políticas", "Pesquisa", "Python"],
-    traits: ["Analítica", "Colaborativa", "Atenta a detalhes"],
-    workStyle: ["Baseada em Evidências", "Colaborativo", "Documentado"],
-    interests: ["IA Responsável", "Regulação", "Bias Mitigation"],
-    academic: ["Mestrado em Ciência da Computação","Especialização em Ética em Inteligência Artificial" ],
-    experience: ["Liderança em projetos de IA responsável","Palestrante sobre IA responsável"],
-    hobbies: ["Pensamento crítico","Trabalho em equipe","Hackathons, arte generativa, comunidades tech"]
+    traits: ["Analítica", "Detalhista", "Inovadora", "Colaborativa"],
+    workStyle: ["Colaborativo", "Orientado a Pesquisa", "Metódica", "Adaptável"],
+    interests: ["Futuro", "Impacto Social", "Política Tecnológica", "Educação"],
+    academic: ["Mestrado em Filosofia — MIT — 2021", "Doutorado em Ciência da Computação — Stanford University — 2017"],
+    experience: ["Especialista em Ética de IA — FutureTech Labs — 2020–Atual", "Cientista de Dados - Google AI — 2019–2020"],
   },
   {
     id: 3,
@@ -45,23 +43,16 @@ const professionals = [
     location: "Seattle, WA",
     image: "../img/Perfil-Foto3.jpg",
     company: "GreenFuture Corp",
-    email: "priya.patel@greenfuturecorp.com",
-    phone: "+1 (555) 734-2201",
-    website: "https://greenfuturecorp.com",
+    email: "priya.patel@greenfuture.com",
+    phone: "+1 (555) 345-6789",
+    website: "https://greencorp.com",
     about: "Impulsionando iniciativas corporativas de sustentabilidade e responsabilidade ambiental. Comprometida em criar um futuro mais verde através da inovação empresarial.",
-    skills: ["ESG", "Relatórios de Sustentabilidade", "Análise de Ciclo de Vida", "Neutralidade de Carbono"],
-    traits: ["Orientada a Impacto", "Comunicativa", "Liderança"],
-    workStyle: ["Interfuncional", "Metódica", "Orientada a Metas"],
-    interests: ["Energia Limpa", "Economia Circular", "Educação Ambiental"],
-    academic: [
-      "MBA em Sustentabilidade",
-      "Bacharelado em Administração"
-    ],
-    experience: [
-      "10 anos liderando projetos ESG",
-      "Implementação de políticas ambientais corporativas"
-    ],
-    hobbies: ["Sustentabilidade", "Voluntariado ambiental", "Trilhas"]
+    skills: ["Estratégia de Sustentabilidade", "Política Ambiental", "Contabilidade de Carbono", "Engajamento de Stakeholders", "Análise de Dados"],
+    traits: ["Orientada a Propósito", "Colaborativa", "Persistente", "Otimista"],
+    workStyle: ["Foco em Impacto", "Orientada a Dados", "Inovadora", "Transparente"],
+    interests: ["Ação Climática", "Impacto Social", "Energia Renovável", "Economia Circular"],
+    academic: ["Mestrado em Ciências Ambientais — Universidade de Yale — 2021", "Bacharelado em Administração de Empresas — Universidade de Washington — 2015"],
+    experience: ["Diretora de Sustentabilidade — GreenFuture Corp — 2021–Atual", "Analista de Políticas Ambientais — 2017–2021", "Estágio em Sustentabilidade — 2016"],
   },
   {
     id: 4,
@@ -70,17 +61,16 @@ const professionals = [
     location: "Nova York, NY",
     image: "../img/Perfil-Foto4.jpg",
     company: "DesignFirst Studio",
-    email: "david.kim@designfirst.studio",
-    phone: "+1 (555) 642-1144",
+    email: "david.kim@designfirst.com",
+    phone: "+1 (555) 456-7890",
     website: "https://designfirst.studio",
     about: "Criando experiências digitais intuitivas e acessíveis. Defensor do design centrado no ser humano na era da automação.",
-    skills: ["Pesquisa com Usuários", "Acessibilidade", "Arquitetura da Informação", "Design de Interação"],
-    traits: ["Empático", "Curioso", "Sistêmico"],
-    workStyle: ["Colaborativo", "Prototipação Rápida", "Iterativo"],
-    interests: ["A11y", "Tipografia", "Design Systems"],
-    academic: ["Mestrado em Design de Interação"],
-    experience: ["Liderança de times de UX", "Pesquisa com usuários"],
-    hobbies: ["Acessibilidade", "Tipografia", "Museus"]
+    skills: ["Design UX", "Design UI", "Pesquisa de Usuário", "Prototipação", "Sistemas de Design"],
+    traits: ["Empático", "Curioso", "Cultura", "Meticuloso"],
+    workStyle: ["Iterativo", "Colaborativo", "Baseado em Pesquisa", "Orientado a Detalhes"],
+    interests: ["Tipografia", "Estética", "Arquitetura", "Museus e Arte"],
+    academic: ["MFA em Design de Inovação — School of Visual Arts — 2018", "Bacharelado em Design Gráfico — Rhode Island School of Design — 2016"],
+    experience: ["Líder de Design UX — DesignFirst Studio — 2021–Atual", "Designer UX Sênior — 2016–2021"]
   },
   {
     id: 5,
@@ -98,8 +88,7 @@ const professionals = [
     workStyle: ["Remote-First", "Test-Driven", "Open Source"],
     interests: ["DeFi", "NFTs", "Criptografia"],
     academic: ["Bacharelado em Ciência da Computação"],
-    experience: ["Smart contracts", "Infraestrutura Web3"],
-    hobbies: ["Cripto", "Hackathons", "Surf"]
+    experience: ["Smart contracts", "Infraestrutura Web3"]
   },
   {
     id: 6,
@@ -117,8 +106,7 @@ const professionals = [
     workStyle: ["Facilitador", "Baseado em Dados", "Colaborativo"],
     interests: ["Aprendizagem Contínua", "Coaching", "Comunidades"],
     academic: ["Psicologia Organizacional"],
-    experience: ["Programas L&D", "Academias corporativas"],
-    hobbies: ["Leitura", "Mentoria", "Ciclismo"]
+    experience: ["Programas L&D", "Academias corporativas"]
   },
   {
     id: 7,
@@ -136,8 +124,7 @@ const professionals = [
     workStyle: ["Hipótese-Driven", "Iterativo", "Colaborativo"],
     interests: ["Comunidades de Dados", "Café", "Open Data"],
     academic: ["Mestrado em Estatística"],
-    experience: ["Modelagem preditiva", "Dashboards executivos"],
-    hobbies: ["Corrida", "Café", "Comunidades de dados"]
+    experience: ["Modelagem preditiva", "Dashboards executivos"]
   },
   {
     id: 8,
@@ -155,8 +142,7 @@ const professionals = [
     workStyle: ["Procedural", "Documentado", "On-Call"],
     interests: ["CTFs", "Criptografia", "Caminhadas"],
     academic: ["Certificações CISSP/CEH"],
-    experience: ["Blue team", "Resposta a incidentes"],
-    hobbies: ["CTFs", "Criptografia", "Caminhadas"]
+    experience: ["Blue team", "Resposta a incidentes"]
   },
   {
     id: 9,
@@ -174,8 +160,7 @@ const professionals = [
     workStyle: ["Cross-Functional", "Data-Informed", "Iterativo"],
     interests: ["Startups", "Fotografia", "Viagens"],
     academic: ["MBA em Produto"],
-    experience: ["Roadmaps", "Descoberta de produto"],
-    hobbies: ["Fotografia", "Viagens", "Startups"]
+    experience: ["Roadmaps", "Descoberta de produto"]
   },
   {
     id: 10,
@@ -193,8 +178,7 @@ const professionals = [
     workStyle: ["Testar e Aprender", "Data-Driven", "Colaborativo"],
     interests: ["Blogs", "Culinária", "Críquete"],
     academic: ["Marketing"],
-    experience: ["SEO/SEM", "Conteúdo e Analytics"],
-    hobbies: ["Críquete", "Blogs", "Culinária"]
+    experience: ["SEO/SEM", "Conteúdo e Analytics"]
   },
   {
     id: 11,
@@ -212,8 +196,7 @@ const professionals = [
     workStyle: ["Parceria com Negócio", "Dados + Intuição", "Colaborativo"],
     interests: ["Yoga", "Leitura", "Eventos de Tech-RH"],
     academic: ["Administração / RH"],
-    experience: ["ATS", "People Analytics"],
-    hobbies: ["Yoga", "Leitura", "Eventos de tech-RH"]
+    experience: ["ATS", "People Analytics"]
   },
   {
     id: 12,
@@ -231,8 +214,7 @@ const professionals = [
     workStyle: ["Always-On", "Colaborativo", "Orientado a Comunidade"],
     interests: ["Tendências", "Música", "Fotografia"],
     academic: ["Comunicação Social"],
-    experience: ["Social media", "Growth em redes"],
-    hobbies: ["Fotografia", "Tendências", "Música"]
+    experience: ["Social media", "Growth em redes"]
   }
 ];
 
@@ -340,4 +322,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-  
+
