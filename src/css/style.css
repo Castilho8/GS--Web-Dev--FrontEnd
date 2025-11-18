@@ -458,6 +458,40 @@ footer {
     text-decoration: none;
 }
 
+.perfil-mensagem-recomendar {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.perfil-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.perfil-btn:hover {
+    background: #1d4ed8;
+}
+
+.perfil-btn.secondary {
+    background: #f3f4f6;
+    color: #111827;
+    border: 1px solid #e5e7eb;
+}
+
+.perfil-btn.secondary:hover {
+    background: #e5e7eb;
+}
+
 .slide-header {
     display: flex;
     align-items: center;
