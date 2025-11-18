@@ -5,7 +5,7 @@ const professionals = [
     name: "Marcus Johnson",
     role: "Consultor de Trabalho Remoto",
     location: "Austin, TX",
-    image: "../src/img/Perfil-Foto1.jpg",
+    image: "../img/Perfil-Foto1.jpg",
     company: "WorkAnywhere Co.",
     email: "marcus.j@workanywhere.com",
     phone: "+1 (555) 234-5678",
@@ -282,16 +282,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (contactEl) {
       const items = [];
       if (p.email) {
-        items.push(`<a class="contact-item" href="mailto:${p.email}"><i class="fa-solid fa-envelope"></i><span>${p.email}</span></a>`);
+        items.push(`<p class="contact-item" href="mailto:${p.email}"><i class="fa-solid fa-envelope"></i><span>${p.email}</span></p>`);
       }
       if (p.website) {
         const href = p.website.startsWith('http') ? p.website : `https://${p.website}`;
         const label = p.website.replace(/^https?:\/\//, '');
-        items.push(`<a class="contact-item" href="${href}" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i><span>${label}</span></a>`);
+        items.push(`<p class="contact-item" href="${href}" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i><span>${label}</span></p>`);
       }
       if (p.phone) {
         const telHref = `tel:${p.phone.replace(/\s+/g, '')}`;
-        items.push(`<a class="contact-item" href="${telHref}"><i class="fa-solid fa-phone"></i><span>${p.phone}</span></a>`);
+        items.push(`<p class="contact-item" href="${telHref}"><i class="fa-solid fa-phone"></i><span>${p.phone}</span></p>`);
       }
       contactEl.innerHTML = items.join('');
     }

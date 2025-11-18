@@ -20,11 +20,6 @@ O projeto reúne conteúdos, ferramentas e experiências que ajudam usuários a 
 O LinkDev tem como objetivo apresentar tendências, habilidades emergentes e caminhos profissionais que ganharão destaque nos próximos anos.
 Com um design limpo, responsivo e futurista, a plataforma oferece navegação simples e seções bem definidas para explorar conteúdos sobre inovação, tecnologia e o futuro das profissões.
 
----
-
-## 🔎 Funcionalidades Principais
-
----
 
 ## 🌍 Talentos Diversos
 

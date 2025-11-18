@@ -11,19 +11,37 @@ const questions = [
   {
     question: "Qual tecnologia mais impacta o mercado atual?",
     answers: [
-      { text: "Inteligência Artificial", correct: true },
       { text: "Fax", correct: false },
       { text: "Disquete", correct: false },
+      { text: "Inteligência Artificial", correct: true },
       { text: "Máquina de escrever", correct: false }
     ]
   },
   {
     question: "O que é mais importante para se destacar no futuro?",
     answers: [
-      { text: "Adaptabilidade e aprendizado contínuo", correct: true },
       { text: "Fazer sempre o mesmo", correct: false },
+      { text: "Adaptabilidade e aprendizado contínuo", correct: true },
       { text: "Evitar mudanças", correct: false },
       { text: "Ignorar tecnologia", correct: false }
+    ]
+  },
+  {
+    question: "Qual modelo de trabalho tende a crescer no futuro?",
+    answers: [
+      { text: "Híbrido e flexível", correct: true },
+      { text: "Apenas presencial com horário rígido", correct: false },
+      { text: "Somente remoto sem colaboração", correct: false },
+      { text: "Turnos fixos sem autonomia", correct: false }
+    ]
+  },
+  {
+    question: "Para se manter relevante com IA e automação, o que priorizar?",
+    answers: [
+      { text: "Evitar novas tecnologias", correct: false },
+      { text: "Aprendizado contínuo, upskilling e reskilling", correct: true },
+      { text: "Focar apenas em tarefas repetitivas", correct: false },
+      { text: "Trabalhar isolado sem feedback", correct: false }
     ]
   }
 ];
