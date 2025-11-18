@@ -1,21 +1,18 @@
-
-
 ## 🌐 LinkDev — Conecte-se com o Futuro do Trabalho
 
 ## 👥 Integrantes 
 Murilo Jeronimo Ferreira Nunes — RM560641 
 Bruno Santos Castilho — RM5667994
 
---- 
+
 ## 🌐 LinkDev
 O LinkDev é uma plataforma moderna e intuitiva criada para conectar pessoas, talentos e tecnologias que estão moldando o futuro do trabalho.
 O projeto reúne conteúdos, ferramentas e experiências que ajudam usuários a entender como profissionais, habilidades e modelos de trabalho estão evoluindo em um mundo cada vez mais digital e global.
 
----
 
 ## 🚀 Visão Geral
 
----
+
 
 O LinkDev tem como objetivo apresentar tendências, habilidades emergentes e caminhos profissionais que ganharão destaque nos próximos anos.
 Com um design limpo, responsivo e futurista, a plataforma oferece navegação simples e seções bem definidas para explorar conteúdos sobre inovação, tecnologia e o futuro das profissões.
@@ -26,7 +23,6 @@ Com um design limpo, responsivo e futurista, a plataforma oferece navegação si
 A plataforma destaca a diversidade de áreas e especializações que compõem o ecossistema moderno do trabalho.
 Você encontra conteúdos e referências sobre profissionais de múltiplas indústrias, origens e contextos culturais.
 
---- 
 
 ## 🔧 Habilidades do Futuro
 
@@ -42,7 +38,6 @@ Adaptabilidade e colaboração
 
 IA aplicada ao trabalho
 
----
 
 ## 🌎 Rede Global
 
