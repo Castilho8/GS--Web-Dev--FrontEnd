@@ -1,4 +1,5 @@
 Murilo Jeronimo Ferreira Nunes — RM560641
 Bruno Santos Castilho — RM5667994
 
-link: https://github.com/Castilho8/GS--Web-Dev--FrontEnd
+link repositório: https://github.com/Castilho8/GS--Web-Dev--FrontEnd
+link GitHub Pages: https://castilho8.github.io/GS--Web-Dev--FrontEnd
